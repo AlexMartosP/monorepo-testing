@@ -1,0 +1,28 @@
+{
+  "name": "pnpm-workspace-root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "tsup": {
+    "entry": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "Alexander Martos Paschoal",
+  "license": "ISC",
+  "dependencies": {
+    "lib-of-pnpm": "workspace:*",
+    "calculator-of-pnpm": "workspace:*",
+    "counter-of-pnpm": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
