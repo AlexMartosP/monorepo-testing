@@ -10,5 +10,6 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: echo lib
         run: git diff --quiet HEAD^ HEAD -- "./packages/lib" || echo "Testing in lib"
