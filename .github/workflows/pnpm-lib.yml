@@ -2,6 +2,8 @@ name: pnpm lib package
 
 on:
   push:
+    branches: main
+    paths: "./pnpm/packages/lib"
   pull_request:
     branches: main
     paths: "./pnpm/packages/lib"
