@@ -1,0 +1,26 @@
+{
+  "name": "lib-of-turbo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "tsup": {
+    "entry": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "Alexander Martos Paschoal",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "./dist/index.js"
+  ]
+}
