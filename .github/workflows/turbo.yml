@@ -18,14 +18,14 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v3
 
-      - name: Change folder
-        run: cd ./turbo
-
       - name: Install pnpm
         run: npm install -g pnpm
+        working-directory: turbo/
 
       - name: Install packages
         run: pnpm install
+        working-directory: turbo/
 
       - name: Typecheck
         run: pnpx turbo typecheck --filter=[HEAD^2]
+        working-directory: turbo/
