@@ -1,0 +1,13 @@
+name: pnpm lib package
+
+on:
+  push:
+  pull_request:
+    branches: main
+    paths: "./pnpm/packages/lib"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing"
