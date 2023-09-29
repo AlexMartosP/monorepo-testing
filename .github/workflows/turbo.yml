@@ -15,11 +15,14 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Install node
+        run: actions/setup-node@v3
+
       - name: Change folder
         run: cd ./turbo
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: npm install -g pnpm
 
       - name: Install packages
         run: pnpm install
