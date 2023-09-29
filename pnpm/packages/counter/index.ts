@@ -12,7 +12,6 @@ function getCount() {
 
 count();
 count();
-count();
 
 log("From counter package");
 log(getCount());
