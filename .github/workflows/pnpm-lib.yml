@@ -14,4 +14,4 @@ jobs:
         with:
           fetch-depth: 2
       - name: echo lib
-        run: git diff --quiet HEAD^ HEAD -- "./packages/lib" || echo "Testing in lib"
+        run: git diff --quiet HEAD^ HEAD -- "./pnpm/packages/lib" || echo "Testing in lib"
