@@ -3,13 +3,12 @@ name: pnpm lib package
 on:
   push:
     branches: main
-    paths: "/pnpm/packages/lib/**"
   pull_request:
     branches: main
-    paths: "/pnpm/packages/lib/**"
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Testing"
+      - name: echo lib
+        run: git diff --quiet HEAD^ HEAD -- "./packages/lib" || echo "Testing in lib"
