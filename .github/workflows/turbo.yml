@@ -27,5 +27,5 @@ jobs:
         working-directory: turbo/
 
       - name: Typecheck
-        run: pnpx turbo typecheck --filter=[HEAD^2]
+        run: pnpx turbo typecheck --filter=[HEAD^1]
         working-directory: turbo/
