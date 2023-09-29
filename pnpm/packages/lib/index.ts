@@ -1,5 +1,5 @@
 function log(value: any) {
-  console.log(value, 1);
+  console.log(value);
 }
 
 export default log;
