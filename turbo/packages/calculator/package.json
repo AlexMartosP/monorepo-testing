@@ -9,7 +9,7 @@
     ]
   },
   "scripts": {
-    "typecheck": "tsc --noEmit",
+    "typecheck": "echo 'Typechecking root' && tsc --noEmit",
     "build": "tsup",
     "start": "node ./dist/index.js"
   },

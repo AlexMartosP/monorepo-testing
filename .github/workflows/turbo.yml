@@ -1,0 +1,25 @@
+name: pnpm lib package
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install packages
+        run: pnpm install
+
+      - name: Typecheck
+        run: pnpx turbo typecheck --filter=[HEAD^2]
