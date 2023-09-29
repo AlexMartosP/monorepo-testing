@@ -1,4 +1,4 @@
-name: pnpm lib package
+name: turbo checking
 
 on:
   push:
